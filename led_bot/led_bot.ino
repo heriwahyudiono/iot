@@ -22,8 +22,9 @@ void setup() {
 
   Serial.println("Connecting to WiFi...");
   WiFi.begin(ssid, password);
+
   while (WiFi.status() != WL_CONNECTED) {
-    delay(1000);
+    delay(500);
     Serial.print(".");
   }
   Serial.println("\nWiFi connected");
